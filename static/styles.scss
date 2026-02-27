@@ -1,0 +1,77 @@
+// Color variable
+$title_color: #e6b1c4;
+$primary_color: #efd4dd;
+$secondary_color: #D39686;
+
+
+body {
+    background-color: $title_color;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: $primary_color;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    h1 {
+        color: $secondary_color;
+        text-align: center;
+    }
+
+    h4 {
+        color: #666;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+
+        th, td {
+            border: 1px solid #3E2723;
+            padding: 8px;
+            text-align: left;
+            
+        }
+
+        th {
+            background-color: #3E2723;
+            color: #e6b1c4;
+        }
+    }
+    a {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #3E2723;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 20px;
+
+        &:hover {
+            background-color: darken(#e6b1c4, 10%);
+        }
+   }
+   input {
+        padding: 10px;
+        margin: 5px;
+        border: solid 1px;
+        border-radius: 5px;
+    }
+
+
+   #btn_add {
+    background-color: #3E2723;
+    color: white;
+    cursor: pointer;
+    &:hover {
+        background-color:#3E2723;
+    }  
+  }
+}
